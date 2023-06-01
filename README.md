@@ -1,44 +1,47 @@
 # CodeQA
 
-CodeQA is a command-line tool that allows you to ask questions about a project. Gain insights and deepen your
-understanding of a repository's codebase effortlessly. It is built on top of LangChain.
+CodeQA is a powerful command-line tool designed to help developers understand and navigate their codebase more efficiently. By asking questions directly about your project, you can gain insights and deepen your understanding of the codebase without the need for extensive manual exploration. CodeQA is built on top of LangChain, leveraging its capabilities to provide accurate and insightful responses.
 
 ## Getting Started
 
-Install Code QA:
+Follow these steps to install and set up CodeQA:
+
+1. **Install CodeQA**: Use pip to install CodeQA. Run the following command in your terminal:
+
+    ```bash
+    pip install code-qa
+    ```
+
+2. **Set up OpenAI Token**: CodeQA uses OpenAI's API to generate responses. You need to add your OpenAI token to your virtual environment. Replace `YOUR_TOKEN` with your actual OpenAI token:
+
+    ```bash
+    export OPENAI_TOKEN=YOUR_TOKEN
+    ```
+
+3. **Navigate to your project folder**: Use the `cd` command to navigate to your project's directory:
+
+    ```bash
+    cd PATH/TO/MY/PROJECT
+    ```
+
+4. **Initialize CodeQA Index**: This will generate a `code_qa` folder within your project. Run the following command:
+
+    ```bash
+    code_qa init
+    ```
+
+## Usage
+
+With CodeQA, you can ask questions directly about your code. For example, if you want to know how to test a particular part of your code, you can ask:
 
 ```bash
-pip install code-qa
-```
-
-Add your OpenAI token as virtual environment:
-
-```bash
-export OPENAI_TOKEN=YOUR_TOKEN
-```
-
-Go to your project folder:
-
-```bash
-cd PATH/TO/MY/PROJECT
-```
-
-Initialise Code QA Index. This will generate an `code_qa` folder within your project:
-
-```
-code_qa init
-```
-
-Ask questions about my code:
-
-```
-code_qa query How can I test this?
+code_qa query "How can I test this?"
 ```
 
 ## Ignoring Files
 
-If you want to ignore certain files, then create an `.codeqaignore` file and specify them. The file follows the same
-standard as `.gitignore`
+If there are certain files or directories that you want CodeQA to ignore, you can specify them in a `.codeqaignore` file. This file follows the same syntax and rules as the `.gitignore` file. Simply create a `.codeqaignore` file in your project's root directory and list the files or directories you want to ignore.
 
 ## License
-Apache License Version 2.0, see `LICENSE`
+
+CodeQA is licensed under the Apache License Version 2.0. For more details, see the [LICENSE](LICENSE) file.
