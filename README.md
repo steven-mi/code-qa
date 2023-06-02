@@ -38,6 +38,15 @@ With CodeQA, you can ask questions directly about your code. For example, if you
 code_qa query "How can I test this?"
 ```
 
+## Notes
+
+CodeQA is engineered to be universally applicable across various text documents. It enables you to effortlessly navigate through:
+
+- PDF documents
+- Markdown files
+- And any other form of text-based documents.
+- 
+
 ## Ignoring Files
 
 If there are certain files or directories that you want CodeQA to ignore, you can specify them in a `.codeqaignore` file. This file follows the same syntax and rules as the `.gitignore` file. Simply create a `.codeqaignore` file in your project's root directory and list the files or directories you want to ignore.
