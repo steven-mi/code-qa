@@ -30,7 +30,7 @@ Follow these steps to install and set up CodeQA:
     cd PATH/TO/MY/PROJECT
     ```
 
-4. **Initialize CodeQA Index**: This will generate a `.code_qa_data` folder within your project. The folder contains your project embeddings stored as parquet files. Run the following command:
+4. **Initialize CodeQA Index**: This will generate a `.code_qa` folder within your project. The folder contains your project embeddings stored as parquet files. Run the following command:
 
     ```bash
     code_qa init

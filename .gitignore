@@ -1,5 +1,5 @@
 .venv
-.code_qa_data
+.code_qa
 dist
 __pycache__
 .idea

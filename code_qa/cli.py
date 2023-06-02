@@ -10,7 +10,7 @@ from code_qa.utils import load_files, load_openai_token
 
 
 class CodeQA:
-    CODE_QA_FOLDER = "./.code_qa_data"
+    CODE_QA_FOLDER = "./.code_qa"
 
     def init(self, project_path="./"):
         token = load_openai_token()
