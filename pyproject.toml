@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "code-qa"
 version = "0.2.0"
-description = ""
+description = "CodeQA: Unleash the power of AI in your codebase. Ask questions & get insights from your document."
 authors = ["Steven Mi <steven.mi@getyourguide.com>"]
 readme = "README.md"
 packages = [{include = "code_qa"}]
